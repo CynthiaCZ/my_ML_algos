@@ -37,16 +37,15 @@
 ### Tools and Versions
 
 The project uses the following tools and packages:
-
-* [Picard 3.1.0](https://broadinstitute.github.io/picard/)
-* [MACS2](https://hbctraining.github.io/Intro-to-ChIPseq/lessons/05_peak_calling_macs.html)
-
-
+- python/3.10.7
+- numpy/1.23.3
+- matplotlib/3.6.0
+- pandas/1.4.2
+- quadprog/0.1.11
+- scikit-learn/1.1.1
 
 <!-- SECTIONS -->
 ## Sections
-These are the sections shown in the workflow chart.
-
 ### Linear Regression
 models.py: 
 main.py: 
