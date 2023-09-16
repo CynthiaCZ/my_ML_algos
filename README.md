@@ -47,38 +47,55 @@ The project uses the following tools and packages:
 <!-- SECTIONS -->
 ## Sections
 ### Linear Regression
-models.py: 
-main.py: 
+* data: wine quality dataset https://archive.ics.uci.edu/ml/datasets/Wine+Quality.
+* models.py: contains functions to train, predict, and calculate MSE for the linear regression model.
+* main.py: contains the main program to read the wine quality dataset, run the model, and print results. A wine quality rating (out of 10) is being predicted based on 11 attributes.
+* output.png: sample output of training and testing MSE. 
 
 ### Logistic Regression
-models.py: 
-main.py: 
+* data: UCI Census Income data from 1994 https://archive.ics.uci.edu/ml/datasets/Census+Income
+* models.py: contains functions to train, predict, and calculate accuracy for the logistic regression model.
+* main.py: contains the main program to read the census dataset, run the model, and print results. Education levels (3 levels) of individuals are being predicted based on the attributes from the census.
+* output.png: sample output of epoch loss, number of epochs, and test accuracy
 
 ### Validation and Regularization
-models.py: 
-main.py: 
+* data: UCI Breast Cancer Wisconsin (Diagnostic) Data https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)
+* models.py: contains functions to evaluate models by splitting data into train/test/validation sets, and returns lists of training and validation errors with respect to a selection of lambda hyperparameter values. Also contains functions to evaluate models by implementing k-fold cross validation, and returns a list of errors with respect to each value of lambda.
+* main.py: contains the main program to read the breast cancer dataset, run the models, and print results. Whether or not a given patient has breast cancer is predicted from their health data.
+* output.png: sample output of train and validation accuracy
+* output_plot.png: k-fold validation result: train, validation, and k-fold errors at different lambda values.
 
-### Decision Treess
-models.py: 
-main.py: 
+### Decision Trees
+* data: Spambase Dataset https://archive.ics.uci.edu/dataset/94/spambase and Chess Dataset https://archive.ics.uci.edu/dataset/21/chess+king+rook+vs+king+knight
+* models.py: contains functions to implement decision trees for binary classification problems, including recursively splitting and pruning the trees.
+* main.py: contains the main program to read data, run the model, and print results.
+   The model is being applied to:
+   1. Spambase Dataset: the goal is to train a model that can classify whether an email is spam or not from feature attributes such as the frequency of certain words and the amount of capital letters in a given message.
+   2. Chess Dataset
+    Each row of the chess.csv dataset contains 36 features, which represent the current state of the chess board. The task is to use the Decision Trees to classify whether or not it is possible for white to win the game.
+* output.png: sample output of training and test loss of pruned and unpruned trees with different node scores.
 
 ### Naive Bayes
-models.py: 
-main.py: 
+* data: German Credit dataset https://archive.ics.uci.edu/dataset/144/statlog+german+credit+data
+* models.py: contains functions to implement a Naive Bayes model as well as different methods to gauge the trained model's fairness.
+* main.py: contains the main program to read the German credit dataset, run classifiers, and print results. The prediction task is to predict whether someone's credit is good (1) or bad (0) based on attributes like sex, age, and personal status.
+* output.png: train accuracy, test accuracy, and different fairness measures.
 
 ### Support Vector Machine
-models.py: 
-main.py: 
+* data: Spambase dataset https://archive.ics.uci.edu/dataset/94/spambase
+* models.py: contains functions to implement support vector machine (SVM) model to solve binary classification problems. A Python library for solving quadratic problems, quadprog, is used as an optimizer instead of gradient-based methods.
+* qp.py: this file contains functions to solve quadratic quadratic problems using quadprog.
+* main.py: contains the main program to read the spambase dataset, run the model, and print results. The goal is to train a model that can classify whether an email is spam or not from feature attributes such as the frequency of certain words and the amount of capital letters in a given message. 
+* output.png: train and test accuracy of linear, RBF, and polynomial kernel.
+* plot: accuracy at different hyperparameter and plots of different kernels applied to toy datasets.
 
 ### Kmeans Clustering
-models.py: 
-main.py: 
-
+* data: contains the digits.csv file, where each row is an observation of a hand-written digit in 0-9, containing a label in the first column, and 8*8=64 pixel values in the rest of the columns.
+* models.py: contains functions to train and predict using a Kmeans classifier.
+* kmeans.py: contains helper functions required by the K-means method via iterative improvement.
+* main.py: contains the main program to read data, run the Kmeans classifier, and print results. The goal is to cluster the hand-written digits.
+* plot_clusters.png: plotted cluster centers to resemble the 10 digits.
 
 <!-- SUMMARY -->
 ## Summary and Acknowledgments
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-[workflow_chart]: ./workflow_chart.png
-
+The above code and data files are adapted from my implementations of the homework assignments of CSCI1420 Machine Learning and DATA2060 Machine Learning: from Theory to Algorithms.

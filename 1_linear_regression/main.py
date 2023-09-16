@@ -1,6 +1,6 @@
 """
    This file contains the main program to read data, run the model, and print results
-   The model is being applied to a dataset on wine quality
+   The model is being applied to a dataset on wine quality: https://archive.ics.uci.edu/ml/datasets/Wine+Quality.
    A wine quality rating (out of 10) is being predicted based on 11 attributes
 """
 
