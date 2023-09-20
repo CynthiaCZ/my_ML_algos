@@ -10,23 +10,23 @@
     <li>
       <a href="#sections">Sections</a>
       <ul>
-        <li><a href="#linear_regression">Linear Regression</a></li>
-        <li><a href="#logistic_regression">Logistic Regression</a></li>
-        <li><a href="#validation_and_regularization">Validation and Regularization</a></li>
-        <li><a href="#decision_trees">Decision Treess</a></li>
-        <li><a href="#naive_bayes">Naive Bayes</a></li>
-        <li><a href="#support_vector_machine">Support Vector Machine</a></li>
-        <li><a href="#kmeans_clustering">Kmeans Clustering</a></li>
+        <li><a href="#linear-regression">Linear Regression</a></li>
+        <li><a href="#logistic-regression">Logistic Regression</a></li>
+        <li><a href="#validation-and-regularization">Validation and Regularization</a></li>
+        <li><a href="#decision-trees">Decision Treess</a></li>
+        <li><a href="#naive-bayes">Naive Bayes</a></li>
+        <li><a href="#support-vector-machine">Support Vector Machine</a></li>
+        <li><a href="#kmeans-clustering">Kmeans Clustering</a></li>
       </ul>
     </li>
-    <li><a href="#summary-and-acknowledgments">Summary and Acknowledgments</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 
 
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
+This GitHub repository hosts a collection of machine learning algorithms implemented from scratch using standard Python and NumPy. The code and data files are adapted from the author's implementations of the homework assignments from CSCI1420 Machine Learning and DATA2060 Machine Learning: from Theory to Algorithms at Brown University. Having completed the first course and served as a Teaching Assistant for the second course for a year, the author brings a depth of understanding and practical experience to these implementations. The project encompasses a diverse set of models, including Linear Regression, Logistic Regression, Validation and Regularization, Decision Trees, Naive Bayes, Support Vector Machine, and Kmeans Clustering. Each algorithm is accompanied by a separate section in the readme file as detailed below, providing information on the datasets used, the functions within the model files, and the main programs for execution. The models are designed to address various classification and regression tasks, ranging from predicting wine quality ratings to classifying email spam.
 
 ### How to Run
 * To run each machine learning algorithm, go to the corresponding folder and run the main.py file. This will call the supporting functions in the models.py files as well as other supporting scripts.
@@ -94,8 +94,9 @@ The project uses the following tools and packages:
 * models.py: contains functions to train and predict using a Kmeans classifier.
 * kmeans.py: contains helper functions required by the K-means method via iterative improvement.
 * main.py: contains the main program to read data, run the Kmeans classifier, and print results. The goal is to cluster the hand-written digits.
+* output.png: shapes of training and testing data as well as model accuracy.
 * plot_clusters.png: plotted cluster centers to resemble the 10 digits.
 
 <!-- SUMMARY -->
-## Summary and Acknowledgments
-The above code and data files are adapted from my implementations of the homework assignments of CSCI1420 Machine Learning and DATA2060 Machine Learning: from Theory to Algorithms.
+## Acknowledgments
+The code and data included in this repository are adapted from the author's implementations of the homework assignments of CSCI1420 Machine Learning and DATA2060 Machine Learning: from Theory to Algorithms at Brown University. It is important to note that this code is intended solely for educational purposes. All rights and ownership of the original materials belong to Brown University.
